@@ -1,11 +1,18 @@
 import React from 'react';
-import Diary from './Diary';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import DiaryHome from './DiaryHome';
+import DiaryOpen from './DiaryOpen';
 
 function App() {
   return (
-    <div className="App">
-      <Diary />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<DiaryHome />} />
+          <Route path="/open" element={<DiaryOpen />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
