@@ -5,8 +5,7 @@ export default function DiaryHome() {
   return (
     <div className="w-4/12 h-screen border-2 border-black absolute right-40">
       <span className="text-9xl text-black font-serif relative left-40 top-32">
-        {' '}
-        V-log{' '}
+        V-log
       </span>
       <span className="flex flex-col flex-wrap text-center gap-4 absolute bottom-36 left-32">
         <span className="text-4xl text-black font-serif"> Write </span>
@@ -14,7 +13,6 @@ export default function DiaryHome() {
           your own unique diary
         </span>
         <span className="text-4xl text-black font-serif">
-          {' '}
           with just 5 words
         </span>
       </span>
